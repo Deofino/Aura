@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+
+// TODO IMPORT FUNCTIONS
+@import './app/sass/Functions/Default.scss';
+
+
+// TODO IMPORT GLOBAL VARIABLES
+@import './app/sass/Global/Colors.scss';
+@import './app/sass/Global/Others.scss';
+
+
+// TODO INSERT CSS VARIABLES
+:root{
+    @each $name, $color in $colors {
+        --color-#{$name}: #{$color};
+    }
+ 
+    --color-background: var(--color-light);
+    --font-color: var(--color-dark);
+}
+:root.dark{
+    --color-background: var(--color-dark);
+    --font-color: var(--color-white);
+}
+ 
+
+// TODO IMPORT LAYOUTS BASE
+@import './app/sass/Layout/Base.scss';
+@import './app/sass/Layout/GlobalClasses.scss';
+@import './app/sass/Layout/Animations.scss';
+
+
+// TODO IMPORT COMPONENTS
+@import './app/sass/Components/Header/Header.scss';
+@import './app/sass/Components/Header/Navbar.scss';
+@import './app/sass/Components/Header/Menu.scss';
+

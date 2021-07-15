@@ -1,0 +1,8 @@
+
+@function rem($size){
+    @return ($size / 16px) + rem;
+  }
+
+@function clamp($min, $prefer, $max){
+    @return max($min, min($prefer, $max));
+}

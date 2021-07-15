@@ -1,0 +1,60 @@
+
+  
+  // BASIC ANIMATIONS 
+
+  @keyframes pulse{
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes to-left{
+    from{
+      left: -110%;
+      opacity: 0;
+    }
+    to{
+      left: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes to-bottom{
+    from{
+      top: -110%;
+      opacity: 0;
+    }
+    to{
+      top: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes to-right{
+    from{
+      right: -110%;
+      opacity: 0;
+    }
+    to{
+      right: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes rotate{
+    to{
+      transform: rotateX(180deg);
+    }
+  }
+  @keyframes zoom-in{
+    to{
+      transform: scale(1.05);
+    }
+  }
