@@ -1,8 +1,58 @@
-
-@function rem($size){
+@function rem($size) {
+  @if unit($size) == "" {
+    $rem: ($size) / 16;
+    @return $rem + rem;
+  } @else {
     @return ($size / 16px) + rem;
   }
+}
 
-@function clamp($min, $prefer, $max){
-    @return max($min, min($prefer, $max));
+@mixin flex($place) {
+  display: flex;
+  align-items: center;
+  @if $place == center {
+    justify-content: center;
+  } @else if $place == end {
+    justify-content: center;
+  } @else if $place == start {
+    justify-content: start;
+  } @else {
+    justify-content: $place;
+  }
+}
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 56.25em) {
+      // 900px
+      @content;
+    }
+  } @else if $point == large {
+    @media (max-width: 75em) {
+      // 1200px
+      @content;
+    }
+  } @else {
+    @media (max-width: ($point / 16) + "em") {
+      @content;
+    }
+  }
+}
+
+/**
+  @param {$color} - Background color, aceita gradiente tbm
+  @param {$border:true} - Vai ter borda
+  @param {$fontColor} - Cor da fonte
+*/
+@mixin bg-generate($color, $fontColor: $black, $border: true) {
+  color: $fontColor;
+  background: $color;
+  @if $border==true {
+    border: 1px solid darken($color, 5%);
+  }
 }
