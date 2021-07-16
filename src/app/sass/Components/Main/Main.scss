@@ -1,0 +1,17 @@
+.l-main {
+    max-width: $w-extra-large;
+    margin: rem(100) auto;
+    @include flex(center);
+    flex-direction: row;
+    color: var(--color-dark);
+    flex-wrap: wrap;
+    padding: rem(16);
+    background-color: lighten($primary, 42%);
+    &__image {
+        flex-grow: 1;
+        height: 100%;
+        min-width: 300px;
+        max-width: 400px;
+        margin-left: rem(8);
+    }
+}

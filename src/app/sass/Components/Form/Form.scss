@@ -1,0 +1,59 @@
+.c-form {
+    flex-grow: 1;
+    height: 100%;
+
+    &__item {
+        width: 100%;
+    }
+    &__headline {
+        width: 100%;
+        font-size: $global-font-size-xlg;
+    }
+    &__text {
+        width: 100%;
+        font-size: $global-font-size;
+        padding-bottom: $global-padding;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 80%;
+            height: rem(1);
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            background-color: var(--color-shadow);
+        }
+    }
+    &__label {
+        width: 100%;
+        display: block;
+        margin-top: $global-margin;
+        margin-bottom: rem(-4);
+        font-size: $global-font-size;
+    }
+    &__input {
+        width: 100%;
+        border-radius: $global-radius / rem(2);
+        font-size: $global-font-size-sm;
+        padding: rem(2) rem(4);
+        color: var(--font-color);
+        background-color: var(--color-background);
+        margin-bottom: $global-margin;
+    }
+    &__button {
+        padding: $global-padding;
+        background-color: var(--color-primary);
+        font-size: $global-font-size-lg;
+        color: var(--color-white);
+        border-radius: $global-radius / rem(2);
+        font-weight: bolder;
+        margin-top: $global-margin;
+        width: 100%;
+        opacity: 0.9;
+        transition: 0.3s ease;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
