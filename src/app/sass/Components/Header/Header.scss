@@ -1,5 +1,11 @@
-.l-headerMain{
+.l-headerMain {
     background-color: var(--color-primary);
     padding: $global-padding;
     height: rem(60px);
+    z-index: $z-dropdown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: rem(2) rem(4) rem(6) var(--color-shadow);
+    width: 100%;
 }

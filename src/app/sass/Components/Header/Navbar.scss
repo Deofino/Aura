@@ -1,4 +1,4 @@
-.c-navbar{
+.c-navbar {
     width: 100%;
     height: 100%;
     display: flex;
@@ -11,10 +11,9 @@
     margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
-   
-    @include breakpoint(small){
-   
-        .btn-openDrawer{
+
+    @include breakpoint(small) {
+        .btn-openDrawer {
             display: flex;
             width: rem(40px);
             height: rem(30px);
@@ -25,56 +24,57 @@
             padding: $global-padding;
             position: relative;
 
-            &::before,&::after{
-                transition: .6s $t-ease-out-expo;
+            &::before,
+            &::after {
+                transition: 0.6s $t-ease-out-expo;
                 height: rem(2.5px);
                 border-radius: $global-radius;
                 background-color: var(--font-color);
                 position: absolute;
-                content: '';
+                content: "";
                 width: 60%;
-                transform: translateX(-50%) rotate(0);                    
+                transform: translateX(-50%) rotate(0);
                 left: 50%;
             }
-            &::after{
+            &::after {
                 bottom: 30%;
             }
-            &::before{
+            &::before {
                 top: 30%;
             }
 
-            &.active{
-                &::before,&::after{
+            &.active {
+                &::before,
+                &::after {
                     left: 50%;
                     height: rem(3px);
-                    transition: .6s $t-ease-out-back;
+                    transition: 0.6s $t-ease-out-back;
                 }
-                &::after{
+                &::after {
                     top: 50%;
-                    transform: translateX(-50%) rotate(130deg);                    
+                    transform: translateX(-50%) rotate(130deg);
                 }
-                &::before{
+                &::before {
                     top: 50%;
-                    transform: translateX(-50%) rotate(-130deg);                    
+                    transform: translateX(-50%) rotate(-130deg);
                 }
-    
             }
 
-            &:hover{
+            &:hover {
                 opacity: 1;
                 cursor: pointer;
-                transition: .3s $t-ease-in-out-circ;
+                transition: 0.3s $t-ease-in-out-circ;
                 transform: translateY(rem(-2px));
                 box-shadow: 0 rem(4px) rem(4px) var(--color-shadow);
             }
-            i{
+            i {
                 font-size: $global-font-size;
                 color: var(--font-color);
             }
         }
     }
 
-    &__logo{
+    &__logo {
         background-color: var(--color-dark);
         padding: rem(2px) rem(8px);
         border-radius: $global-radius;
@@ -87,9 +87,8 @@
         @include flex(end);
     }
 
-    &__image{
+    &__image {
         font-size: rem(18px);
         color: var(--color-white);
     }
-
 }

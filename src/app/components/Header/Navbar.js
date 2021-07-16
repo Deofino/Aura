@@ -1,34 +1,35 @@
 import React from "react";
-import Menu from './Menu';
+import Menu from "./Menu";
 
-export default class Navbar extends React.Component{
-    constructor(props){
+export default class Navbar extends React.Component {
+    constructor(props) {
         super(props);
-        this.state = ({
-            isDrawer: '',
-        });
+        this.state = {
+            isDrawer: "",
+        };
     }
     /**
      * Faz o menu fica responsivo, trazendo-o para a tela e animacao no botao
      */
-    clickDrawer=()=>{
+    clickDrawer = () => {
         this.setState({
-            isDrawer: this.state.isDrawer===''?' active':''
-        })
-    }
-    render(){
-        return(
+            isDrawer: this.state.isDrawer === "" ? " active" : "",
+        });
+    };
+    render() {
+        return (
             <nav className="c-navbar">
-            <div className="c-navbar__logo shadow">
-                <h2 className="c-navbar__image">LOGO</h2>
-            </div>
+                <div className="c-navbar__logo shadow">
+                    <h2 className="c-navbar__image">LOGO</h2>
+                </div>
 
-            <button className={'d-none shadow btn-openDrawer'+this.state.isDrawer} onClick={()=>this.clickDrawer()}>
-            </button>
-            
-            <Menu isDrawer={this.state.isDrawer} />
+                <button
+                    className={"d-none shadow btn-openDrawer" + this.state.isDrawer}
+                    onClick={() => this.clickDrawer()}
+                ></button>
 
-        </nav>
-        )
+                <Menu isDrawer={this.state.isDrawer} />
+            </nav>
+        );
     }
 }
