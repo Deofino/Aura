@@ -41,19 +41,4 @@
         background-color: var(--color-background);
         margin-bottom: $global-margin;
     }
-    &__button {
-        padding: $global-padding;
-        background-color: var(--color-primary);
-        font-size: $global-font-size-lg;
-        color: var(--color-white);
-        border-radius: $global-radius / rem(2);
-        font-weight: bolder;
-        margin-top: $global-margin;
-        width: 100%;
-        opacity: 0.9;
-        transition: 0.3s ease;
-        &:hover {
-            opacity: 1;
-        }
-    }
 }

@@ -1,7 +1,14 @@
 import React from 'react';
-
+import Button from './Button';
+import { FaUserPlus } from 'react-icons/fa'
 export default class Form extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = ({
+            isLoading: false,
+        })
+    }
 
     render() {
 
@@ -25,8 +32,14 @@ export default class Form extends React.Component {
                     <label htmlFor="password" className="c-form__label">Senha: </label>
                     <input type="password" className="c-form__input" name="password" id="password" />
                 </div>
-                <div className="c-form__item">
-                    <button type="button" className="c-form__button" id="password">Cadastrar</button>
+                <div className="c-form__item ">
+                    <Button
+                        type='button'
+                        isLoading={this.state.isLoading}
+                        styleButton={{}}
+                        icon={<FaUserPlus size={20} fill='#FFFFFF' style={{ marginRight: 8, }} />}
+                        onClick={() => alert('roi')}
+                    >Cadastrar</Button>
                 </div>
             </form>
         )
