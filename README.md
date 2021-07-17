@@ -18,9 +18,11 @@ tempora eius illum est illo!
 
 ## Tech Stack
 
-**Front-end:** Html, Css, Javascript, ReactJS, SASS, Apache, Babel.
+**Front-end:** Html, Css, Javascript, ReactJS, SASS, Apache, Babel
+
 **Back-end:** Php, Composer, Git, Github, NodeJS, Yarn.
-**Database:** Mysql, PDO
+
+**Database:** Mysql, PDO.
 
 
 
