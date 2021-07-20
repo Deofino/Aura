@@ -1,12 +1,12 @@
-.c-menu{
+.c-menu {
     flex-grow: 1;
     margin-left: rem(8px);
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-    @include breakpoint(small){
-        &{
+    @include breakpoint(small) {
+        & {
             margin-left: 0;
             background-color: darken($primary, 5%);
             height: 100%;
@@ -16,65 +16,71 @@
             justify-content: flex-start;
             flex-direction: column;
             padding: rem(16px) 0;
-            
-            transition: .6s $t-elastic;
+            transition: 0.6s $t-elastic;
             left: -110%;
-            opacity: .3;
+            opacity: 0.3;
+
+            @include breakpoint(dark) {
+                background-color: darken($primary, 15%);
+            }
         }
-        &.active{
+        &.active {
             display: flex;
             left: 0;
             opacity: 1;
         }
     }
 
-    &__item{
+    &__item {
         padding: 0 rem(8px);
         margin: 0 rem(8px);
-        opacity: .8;
-        
-        &:last-child{
+        opacity: 0.8;
+
+        &:last-child {
             margin-right: 0;
         }
-        &--focus{
+        &--focus {
             opacity: 1;
         }
-        &:hover{
-            opacity: .9;
+        &:hover {
+            opacity: 0.9;
         }
 
-        @include breakpoint(small){
-            &{
+        @include breakpoint(small) {
+            & {
                 padding: 0;
                 width: 100%;
-                margin:0;      
-                text-align: center;      
+                margin: 0;
+                text-align: center;
             }
-            &:last-child{
+            &:last-child {
                 margin-bottom: 0;
             }
         }
     }
 
-    &__link{
+    &__link {
         color: white;
         cursor: pointer;
         font-size: $global-font-size;
-        &:hover{
+        &:hover {
             text-shadow: 0 0 rem(1px) var(--color-white);
         }
 
-        @include breakpoint(small){
-            &{
+        @include breakpoint(small) {
+            & {
                 display: block;
                 padding: rem(16px) 0;
                 text-align: center;
             }
-            &:hover{
+            &:hover {
                 text-shadow: none;
                 background-color: lighten($primary, 5%);
+
+                @include breakpoint(dark) {
+                    background-color: darken($primary, 10%);
+                }
             }
         }
     }
-    
 }
