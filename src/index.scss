@@ -16,10 +16,11 @@
 
     --color-background: var(--color-light);
     --font-color: var(--color-dark);
-}
-:root.dark {
-    --color-background: var(--color-dark);
-    --font-color: var(--color-white);
+
+    @include breakpoint(dark) {
+        --color-background: var(--color-dark);
+        --font-color: var(--color-white);
+    }
 }
 
 //? IMPORT LAYOUTS BASE
@@ -36,6 +37,6 @@
 @import "./app/sass/Components/Form/Form.scss";
 
 @import "./app/sass/Components/Form/Button.scss";
-// @import "./app/sass/Components/Form/Form.scss";
+@import "./app/sass/Components/Form/Input.scss";
 // @import "./app/sass/Components/Form/Form.scss";
 // @import "./app/sass/Components/Form/Form.scss";
