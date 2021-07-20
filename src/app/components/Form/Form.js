@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
-import { FaUserPlus } from 'react-icons/fa'
+import Input from './Input';
+import { FaUserPlus, FaUser, FaAt, FaPhone, FaLock } from 'react-icons/fa'
 export default class Form extends React.Component {
 
     constructor(props) {
@@ -13,32 +14,53 @@ export default class Form extends React.Component {
     render() {
 
         return (
-            <form action='/' className='c-form padding ' method='GET'>
+            <form action='/' className='c-form ' method='GET'>
                 <h1 className='c-form__headline'>Formulario</h1>
                 <p className='c-form__text'>Preencha todos os campos corretamente.</p>
                 <div className="c-form__item">
-                    <label htmlFor="name" className="c-form__label">Nome: </label>
-                    <input type="text" className="c-form__input" name="name" id="name" />
+                    <Input
+                        id='name'
+                        title='Nome: '
+                        delete
+                        required
+                        icon={<FaUser fill='white' />} />
                 </div>
                 <div className="c-form__item">
-                    <label htmlFor="email" className="c-form__label">E-mail: </label>
-                    <input type="email" className="c-form__input" name="email" id="email" />
+                    <Input
+                        id='email'
+                        required
+                        delete
+                        icon={<FaAt fill='white' />}
+                        title='E-mail: ' />
                 </div>
                 <div className="c-form__item">
-                    <label htmlFor="tel" className="c-form__label">Telefone: </label>
-                    <input type="tel" className="c-form__input" name="tel" id="tel" />
+                    <Input
+                        required
+                        id='tel'
+                        delete
+                        icon={<FaPhone fill='white' />}
+                        title='Numero de celular: '
+                        mask='(99) 99999-9999'
+                        type='tel'
+                    />
                 </div>
                 <div className="c-form__item">
-                    <label htmlFor="password" className="c-form__label">Senha: </label>
-                    <input type="password" className="c-form__input" name="password" id="password" />
+                    <Input
+                        required
+                        id='password'
+                        delete
+                        title='Senha: '
+                        icon={<FaLock fill='white' />}
+                        max='16'
+                        min='8'
+                        type='password'
+                    />
                 </div>
                 <div className="c-form__item ">
                     <Button
-                        type='button'
+                        type='submit'
                         isLoading={this.state.isLoading}
-                        styleButton={{}}
-                        icon={<FaUserPlus size={20} fill='#FFFFFF' style={{ marginRight: 8, }} />}
-                        onClick={() => alert('roi')}
+                        icon={<FaUserPlus fill='#FFFFFF' />}
                     >Cadastrar</Button>
                 </div>
             </form>
