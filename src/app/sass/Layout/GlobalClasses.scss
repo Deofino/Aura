@@ -50,9 +50,17 @@
 .text-end {
   text-align: end;
 }
+
 .text-small {
-  font-size: max(11px, 14px);
+  font-size: $global-font-size-sm;
 }
+.text-large {
+  font-size: $global-font-size-lg;
+}
+.text-extra-large {
+  font-size: $global-font-size-xlg;
+}
+
 .bold {
   font-weight: bolder;
 }

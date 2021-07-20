@@ -65,17 +65,30 @@ button {
   margin: 0;
   padding: 0;
   border: 0;
+  display: block;
   font-family: $font-family-sans-serif;
   color: inherit;
+  letter-spacing: rem(-0.3);
   outline: 0;
-  vertical-align: baseline;
+  font-size: $global-font-size;
+  vertical-align: middle;
   z-index: $z-default;
+  font-weight: 300;
+  transition: 0.3s ease;
   background: transparent;
 }
 html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+button {
+  font-weight: 800;
+  letter-spacing: $global-font-letter-spacing;
 }
 label {
   display: block;
@@ -85,12 +98,14 @@ label {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0;
   color: var(--font-color);
+  font-size: $global-font-size;
   margin: 0;
   border: none;
   outline: none;
+  min-width: none;
   outline-offset: 0.25rem;
 }
 

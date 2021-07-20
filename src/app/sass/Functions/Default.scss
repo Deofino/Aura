@@ -7,8 +7,9 @@
   }
 }
 
-@mixin flex($place) {
+@mixin flex($place, $diretion: row) {
   display: flex;
+  flex-direction: $diretion;
   align-items: center;
   @if $place == center {
     justify-content: center;
@@ -37,6 +38,11 @@
       // 1200px
       @content;
     }
+  } @else if $point == dark {
+    @media (prefers-color-scheme: dark) {
+      // Dark mode
+      @content;
+    }
   } @else {
     @media (max-width: ($point / 16) + "em") {
       @content;
@@ -54,5 +60,16 @@
   background: $color;
   @if $border==true {
     border: 1px solid darken($color, 5%);
+  }
+}
+
+@mixin centralizeAbsolute($Y: false, $X: false) {
+  @if $Y != false {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $X != false {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
