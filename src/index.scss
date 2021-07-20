@@ -17,7 +17,7 @@
     --color-background: var(--color-light);
     --font-color: var(--color-dark);
 
-    @include breakpoint(dark) {
+    @include darkMode {
         --color-background: var(--color-dark);
         --font-color: var(--color-white);
     }

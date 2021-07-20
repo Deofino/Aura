@@ -9,7 +9,7 @@
     padding: rem(16);
     background-color: lighten($primary, 45%);
 
-    @include breakpoint(dark) {
+    @include darkMode {
         color: var(--color-white);
         background-color: lighten($dark, 5%);
     }

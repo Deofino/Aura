@@ -38,11 +38,6 @@
       // 1200px
       @content;
     }
-  } @else if $point == dark {
-    @media (prefers-color-scheme: dark) {
-      // Dark mode
-      @content;
-    }
   } @else {
     @media (max-width: ($point / 16) + "em") {
       @content;
@@ -71,5 +66,12 @@
   @if $X != false {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@mixin darkMode {
+  @media (prefers-color-scheme: dark) {
+    // Dark mode
+    @content;
   }
 }

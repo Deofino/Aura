@@ -104,8 +104,9 @@ label {
   font-size: $global-font-size;
   margin: 0;
   border: none;
+  overflow: hidden;
   outline: none;
-  min-width: none;
+  min-width: 0;
   outline-offset: 0.25rem;
 }
 
