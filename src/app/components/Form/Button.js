@@ -14,7 +14,7 @@ import "react-activity/dist/Dots.css";
 export default class Button extends React.Component {
 
     constructor(props) {
-        super(props);
+        super();
     }
 
     render() {
@@ -22,12 +22,10 @@ export default class Button extends React.Component {
             <button
                 onClick={this.props.onClick || null}
                 className='c-button'
-                icon={'roi'}
                 type={this.props.type}
                 style={this.props.styleButton || null}
             >
-                {this.props.icon || null}
-                {this.props.isLoading == true ? <Dots /> : <span style={this.props.styleText || null}>{this.props.children}</span>}
+                {this.props.isLoading === true ? <Dots /> : <span style={this.props.styleText || null}>{this.props.icon || null}{this.props.children}</span>}
             </button>
         )
     }

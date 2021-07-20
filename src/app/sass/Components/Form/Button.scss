@@ -1,18 +1,29 @@
 .c-button {
-    padding: $global-padding;
+    padding: $global-padding 0;
     background-color: var(--color-primary);
-    font-size: $global-font-size-lg;
     color: var(--color-white);
-    border-radius: $global-radius / rem(2);
-    font-weight: bolder;
-    min-height: rem(25);
-    margin-top: $global-margin;
+    height: min-content;
+    border-radius: rem(4);
+    margin-top: rem(8);
     width: 100%;
     text-align: center;
-    @include flex(center);
     opacity: 0.9;
-    transition: 0.3s ease;
     &:hover {
         opacity: 1;
+    }
+    span {
+        @include flex(end);
+        font-size: $global-font-size;
+        width: 100%;
+        margin: 1px;
+        letter-spacing: $global-font-letter-spacing;
+        font-weight: bolder;
+    }
+    svg,
+    div,
+    img,
+    i {
+        font-size: $global-font-size;
+        margin-right: rem(8);
     }
 }

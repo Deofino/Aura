@@ -1,7 +1,7 @@
 .c-form {
     flex-grow: 1;
     height: 100%;
-
+    max-width: 100%;
     &__item {
         width: 100%;
     }
@@ -11,34 +11,20 @@
     }
     &__text {
         width: 100%;
-        font-size: $global-font-size;
+        font-size: $global-font-size-lg;
         padding-bottom: $global-padding;
         position: relative;
-
+        @include breakpoint(small) {
+            font-size: $global-font-size;
+        }
         &::after {
             content: "";
-            width: 80%;
+            width: 100%;
             height: rem(1);
             bottom: 0;
             left: 0;
             position: absolute;
             background-color: var(--color-shadow);
         }
-    }
-    &__label {
-        width: 100%;
-        display: block;
-        margin-top: $global-margin;
-        margin-bottom: rem(-4);
-        font-size: $global-font-size;
-    }
-    &__input {
-        width: 100%;
-        border-radius: $global-radius / rem(2);
-        font-size: $global-font-size-sm;
-        padding: rem(2) rem(4);
-        color: var(--font-color);
-        background-color: var(--color-background);
-        margin-bottom: $global-margin;
     }
 }
