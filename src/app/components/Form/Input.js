@@ -3,8 +3,8 @@ import { FaTimes } from 'react-icons/fa'
 import InputMask from 'react-input-mask'
 
 /**
- * @class Input -  Componente Input ,
- * @props {id=[required]} Id do input (pro for do href funcionar)
+ * @function Input -  Componente Input ,
+ * @props {id=[required]} Id do input (para o for do href funcionar)
  * @props {onChange?} funcao callback ao mudanca de texto
  * @props {type? = text} text, email, password, tel, file...
  * @props {max?} Maximo caracter receber
@@ -23,38 +23,30 @@ import InputMask from 'react-input-mask'
  * @props {styleIcon?} Define estilo do icone
  * 
  */
-export default class Input extends React.Component {
-    constructor(props) {
-        super();
-    }
-
-    render() {
-
-        return (
-            <>
-                {this.props.title && <label htmlFor={this.props.id || null} className="c-input__title">{this.props.title}</label>}
-                < div className={this.props.error ? 'c-input c-input--error' : 'c-input'} >
-                    {this.props.icon ? <div className='c-input__icon' style={this.props.styleIcon || null}>{this.props.icon}</div> : null}
-                    <InputMask
-                        mask={this.props.mask || null}
-                        maskChar='#'
-                        type={this.props.type || 'text'}
-                        className='c-input__item'
-                        style={this.props.style || null}
-                        defaultValue={this.props.defaultValue || null}
-                        placeholder={this.props.placeholder || null}
-                        required={this.props.required ? true : false}
-                        id={this.props.id}
-                        maxLength={this.props.max || null}
-                        name={this.props.id || null}
-                        minLength={this.props.min || null}
-                        inputMode={this.props.inputMode || null}
-                        onChange={(e) => this.props.onChange || console.log('onChange ' + this.props.id)}
-                    />
-                    {this.props.delete ? <span className='c-input__delete'> <FaTimes fillOpacity={0.6} onClick={this.props.onDeleteClick || null} /> </span> : null}
-                </div>
-                {this.props.errorText ? <small className='c-input__errorText'>{this.props.errorText}</small> : null}
-            </>
-        )
-    }
+export default function Input(props) {
+    return (
+        <>
+            {props.title && <label htmlFor={props.id || null} className="c-input__title">{props.title}</label>}
+            < div className={props.error ? 'c-input c-input--error' : 'c-input'} >
+                {props.icon ? <div className='c-input__icon' style={props.styleIcon || null}>{props.icon}</div> : null}
+                <InputMask
+                    mask={props.mask || null}
+                    type={props.type || 'text'}
+                    className='c-input__item'
+                    style={props.style || null}
+                    defaultValue={props.defaultValue || null}
+                    placeholder={props.placeholder || null}
+                    required={props.required ? true : false}
+                    id={props.id}
+                    maxLength={props.max || null}
+                    name={props.id || null}
+                    minLength={props.min || null}
+                    inputMode={props.inputMode || null}
+                    onChange={(e) => props.onChange || console.log('onChange ' + props.id)}
+                />
+                {props.delete ? <span className='c-input__delete'> <FaTimes fillOpacity={0.6} onClick={props.onDeleteClick || null} /> </span> : null}
+            </div>
+            {props.errorText ? <small className='c-input__errorText'>{props.errorText}</small> : null}
+        </>
+    )
 }
