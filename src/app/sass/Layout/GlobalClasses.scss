@@ -68,6 +68,13 @@
   font-weight: lighter;
 }
 
+.monospace {
+  font-family: $font-family-monospace;
+}
+.serif {
+  font-family: $font-family-serif;
+}
+
 .relative {
   position: relative;
 }

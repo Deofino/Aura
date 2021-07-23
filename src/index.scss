@@ -1,12 +1,22 @@
 @charset "utf-8";
+// Sans Serif
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+// Serif
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
+// Monospace
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 
 //? IMPORT FUNCTIONS
 @import "./app/sass/Functions/Default.scss";
 
 //? IMPORT GLOBAL VARIABLES
 @import "./app/sass/Global/Colors.scss";
-@import "./app/sass/Global/Others.scss";
+@import "./app/sass/Global/Variables.scss";
+@import "./app/sass/Global/Animations.scss";
 
 //? INSERT CSS VARIABLES
 :root {
@@ -26,7 +36,6 @@
 //? IMPORT LAYOUTS BASE
 @import "./app/sass/Layout/Base.scss";
 @import "./app/sass/Layout/GlobalClasses.scss";
-@import "./app/sass/Layout/Animations.scss";
 
 //? IMPORT COMPONENTS
 @import "./app/sass/Components/Header/Header.scss";
