@@ -1,4 +1,4 @@
-![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/2560px-Logo_NIKE.svg.png)
+![Logotipo](./public/logo192.png)
 # Project Name
 
 Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis voluptas laudantium omnis quidem nostrum
