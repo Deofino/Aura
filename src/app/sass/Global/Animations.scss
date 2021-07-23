@@ -3,7 +3,7 @@
 @keyframes pulse {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
   }
 
   70% {
@@ -54,7 +54,7 @@
 }
 @keyframes rotate {
   to {
-    transform: rotateX(180deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes zoom-in {
@@ -63,7 +63,7 @@
   }
 }
 
-@mixin opacity($op) {
+@mixin opacity($op: 0.8) {
   opacity: $op;
 
   &:hover {

@@ -6,7 +6,10 @@
     @return ($size / 16px) + rem;
   }
 }
-
+/**
+  @param {$place} - justify-content (center,end,start ...)
+  @param {$diretion} - row ou column
+*/
 @mixin flex($place, $diretion: row) {
   display: flex;
   flex-direction: $diretion;
@@ -57,16 +60,18 @@
     border: 1px solid darken($color, 5%);
   }
 }
-
+/**
+  @param {$Y} - Centraliza eixo Y (VERTICAL)
+  @param {$X} - Centraliza eixo X (HORIZONTAL)
+*/
 @mixin centralizeAbsolute($Y: false, $X: false) {
   @if $Y != false {
     top: 50%;
-    transform: translateY(-50%);
   }
   @if $X != false {
     left: 50%;
-    transform: translateX(-50%);
   }
+  transform: translate(-50%, -50%);
 }
 
 @mixin darkMode {

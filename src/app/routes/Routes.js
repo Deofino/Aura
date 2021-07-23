@@ -10,7 +10,7 @@ export default function Routes() {
                 <Main>
                     <Form />
                     <div className='l-main__image'>
-                        <img src={__dirname + 'img/svg-login.svg'} alt='Imagem bonita' />
+                        <img src={__dirname + 'img/svg/svg-login.svg'} alt='Imagem bonita' />
                     </div>
                 </Main>
             </Route>
