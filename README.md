@@ -1,4 +1,4 @@
-![Logotipo](./public/logo192.png)
+![Logotipo](./public/img/project/logo192.png)
 # Project Name
 
 Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis voluptas laudantium omnis quidem nostrum
