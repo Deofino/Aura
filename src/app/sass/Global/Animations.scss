@@ -3,52 +3,46 @@
 @keyframes pulse {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+    filter: drop-shadow(0 0 0 0 rgba(0, 0, 0, 0.6));
   }
 
   70% {
     transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    filter: drop-shadow(0 0 0 10px rgba(0, 0, 0, 0));
   }
 
   100% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    filter: drop-shadow(0 0 0 0 rgba(0, 0, 0, 0));
   }
 }
 @keyframes to-left {
   from {
-    left: -110%;
     margin-left: -110%;
-    opacity: 0;
+    opacity: 0.3;
   }
   to {
-    left: 0;
-    margin-left: 0;
+    margin-left: initial;
     opacity: 1;
   }
 }
 @keyframes to-bottom {
   from {
-    top: -110%;
     margin-top: -110%;
-    opacity: 0;
+    opacity: 0.3;
   }
   to {
-    top: 0;
-    margin-top: 0;
+    margin-top: initial;
     opacity: 1;
   }
 }
 @keyframes to-right {
   from {
-    right: -110%;
-    margin-right: -110%;
-    opacity: 0;
+    margin-left: 110%;
+    opacity: 0.3;
   }
   to {
-    right: 0;
-    margin-right: 0;
+    margin-right: initial;
     opacity: 1;
   }
 }

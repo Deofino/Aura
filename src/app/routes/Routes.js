@@ -1,7 +1,11 @@
 import React from 'react';
+
+// Components 
 import Main from '../components/Main/Main';
 import Form from '../components/Form/Form';
+
 import { Route } from 'react-router-dom';
+
 export default function Routes() {
 
     return (
@@ -10,7 +14,7 @@ export default function Routes() {
                 <Main>
                     <Form />
                     <div className='l-main__image'>
-                        <img src={__dirname + 'img/svg/svg-login.svg'} alt='Imagem bonita' />
+                        <img src={__dirname + 'img/svg/svg-login.svg'} alt='Mulher usando celular, cadeado, seguranca' />
                     </div>
                 </Main>
             </Route>

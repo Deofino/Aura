@@ -70,13 +70,9 @@
             @include breakpoint(small) {
                 font-size: $global-font-size-sm;
             }
-
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include centralizeAbsolute(true);
             filter: drop-shadow(rem(1) rem(1) rem(4) var(--color-shadow));
-            transition: 50ms;
             &:hover {
                 transform: translate(-50%, -50%) scale(1.1);
             }
