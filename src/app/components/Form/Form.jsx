@@ -56,7 +56,7 @@ export default function Form(props) {
                     type='submit'
                     isLoading={isLoading}
                     icon={<FaUserPlus fill='#FFFFFF' />}
-                    onClick={() => { ToastSuccess({ text: 'mensagem maior fodase' }); }}
+                    onClick={() => { ToastSuccess({ text: 'mensagem maior' }); }}
                 >Cadastrar</Button>
             </div>
         </form>
