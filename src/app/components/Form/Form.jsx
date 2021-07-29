@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import Input from './Input';
-import { AlertSuccess, AlertError, AlertWarning } from '../Alert/Modal'
+import { AlertWarning } from '../Alert/Modal'
+import { ToastSuccess, ToastWarning, ToastError, ToastInformation } from '../Alert/Toast';
 import { FaUserPlus, FaUser, FaAt, FaPhone, FaLock } from 'react-icons/fa'
 export default function Form(props) {
 
@@ -55,7 +56,7 @@ export default function Form(props) {
                     type='submit'
                     isLoading={isLoading}
                     icon={<FaUserPlus fill='#FFFFFF' />}
-                    onClick={() => AlertWarning({})}
+                    onClick={() => { ToastSuccess({ text: 'mensagem maior fodase' }); }}
                 >Cadastrar</Button>
             </div>
         </form>

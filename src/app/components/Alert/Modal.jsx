@@ -1,4 +1,3 @@
-import React from 'react';
 import Swal from 'sweetalert2';
 
 export const AlertError = ({ title = 'Error', text = 'Descricao do erro', textButton1 = "OK", textButton2 = "Cancelar" }) => {

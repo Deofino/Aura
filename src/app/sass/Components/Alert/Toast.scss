@@ -1,0 +1,38 @@
+.swal2-toast-shown {
+    .swal2-popup.swal2-toast {
+        padding: rem(8) rem(16);
+        @include breakpoint(small) {
+            padding: rem(4) rem(8);
+        }
+        @include darkMode {
+            background: lighten($dark, 5%);
+            box-shadow: 0 0 rem(10) var(--color-gray-dark);
+            color: var(--color-white);
+        }
+
+        .swal2-timer-progress-bar {
+            background: linear-gradient(120deg, lighten($dark, 60%), lighten($black, 60%));
+        }
+
+        .swal2-title {
+            color: inherit;
+            font-size: $global-font-size;
+            @include breakpoint(small) {
+                font-size: $global-font-size-sm;
+                margin: 1rem rem(4);
+            }
+        }
+
+        // Warning
+        .swal2-icon.swal2-warning {
+            border-color: var(--color-warning);
+            color: var(--color-warning);
+        }
+
+        // Information
+        .swal2-icon.swal2-info {
+            border-color: var(--color-info);
+            color: var(--color-info);
+        }
+    }
+}
