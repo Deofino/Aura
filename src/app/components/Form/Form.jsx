@@ -1,64 +1,44 @@
 import React, { useState } from 'react';
-import Button from './Button';
-import Input from './Input';
-import { AlertWarning } from '../Alert/Modal'
-import { ToastSuccess, ToastWarning, ToastError, ToastInformation } from '../Alert/Toast';
-import { FaUserPlus, FaUser, FaAt, FaPhone, FaLock } from 'react-icons/fa'
-export default function Form(props) {
+import { Button, Input, Checkbox, Select, MenuItem, Radio, RadioGroup } from './index'
+import { FaEye } from 'react-icons/fa';
+export default function Form() {
 
-    const [isLoading, setLoading] = useState(false);
+    const [Checked, setChecked] = useState(false)
+    const items = [
+        { value: 10, label: 'Dez' },
+        { value: 20, label: 'Vinte' },
+        { value: 30, label: 'Trinta' },
+        { value: 40, label: 'Quarenta' },
+        { value: 50, label: 'Cinquenta' },
 
+    ]
     return (
-        <form action='/' className='c-form ' method='GET'>
+        <form action='#' className='c-form ' method='GET'>
             <h1 className='c-form__headline'>Formulario</h1>
             <p className='c-form__text'>Preencha todos os campos corretamente.</p>
             <div className="c-form__item">
-                <Input
-                    id='name'
-                    title='Nome: '
-                    delete
-                    required
-                    icon={<FaUser fill='white' />} />
+                <Input title='Nome: ' />
             </div>
             <div className="c-form__item">
-                <Input
-                    id='email'
-                    required
-                    delete
-                    icon={<FaAt fill='white' />}
-                    title='E-mail: ' />
+                <Input title='E-mail: ' />
             </div>
             <div className="c-form__item">
-                <Input
-                    required
-                    id='tel'
-                    delete
-                    icon={<FaPhone fill='white' />}
-                    title='Numero de celular: '
-                    mask='(99) 99999-9999'
-                    type='tel'
-                />
+                <RadioGroup>
+                    <Radio label='Masculindsadasdasdasdasdasdasasddasdasdasadsdsadsadaso' value='1' />
+                    <Radio label='Feminino' value='2' />
+                </RadioGroup>
             </div>
             <div className="c-form__item">
-                <Input
-                    required
-                    id='password'
-                    delete
-                    title='Senha: '
-                    icon={<FaLock fill='white' />}
-                    max='16'
-                    min='8'
-                    type='password'
-                />
+                <Select label='Categoria:'>
+                    {items.map(e => <MenuItem key={e.value} value={e.value}>{e.label}</MenuItem>)}
+                </Select>
+            </div>
+            <div className="c-form__item">
+                <Checkbox onChange={() => setChecked(!Checked)} isChecked={Checked}>Voce aceita os termos</Checkbox>
             </div>
             <div className="c-form__item ">
-                <Button
-                    type='submit'
-                    isLoading={isLoading}
-                    icon={<FaUserPlus fill='#FFFFFF' />}
-                    onClick={() => { ToastSuccess({ text: 'mensagem maior' }); }}
-                >Cadastrar</Button>
+                <Button>Cadastrar</Button>
             </div>
-        </form>
+        </form >
     )
 }
