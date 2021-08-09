@@ -1,0 +1,14 @@
+.c-checkbox {
+    &__item svg {
+        fill: var(--color-primary);
+        font-size: $global-font-size-xlg;
+    }
+
+    span {
+        font-size: $global-font-size;
+        @include breakpoint(small) {
+            font-size: $global-font-size-sm;
+        }
+        font-family: inherit;
+    }
+}

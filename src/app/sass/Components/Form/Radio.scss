@@ -1,0 +1,28 @@
+.MuiFormGroup-root {
+    margin-top: rem(4);
+}
+.c-radio {
+    font-family: $font-family-sans-serif;
+    margin-left: rem(0) !important;
+    & > span:first-child {
+        padding: rem(4) !important;
+        color: var(--color-primary);
+        &:hover {
+            transition: 0.3s ease;
+            background-color: rgba($color: $primary, $alpha: 0.075);
+        }
+        span:hover,
+        span:active {
+            color: var(--color-primary);
+        }
+    }
+
+    & > span {
+        font-size: $global-font-size;
+        font-family: inherit;
+        word-break: break-all;
+        @include breakpoint(small) {
+            font-size: $global-font-size-sm;
+        }
+    }
+}
