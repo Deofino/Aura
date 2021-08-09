@@ -10,7 +10,7 @@ export default function Menu() {
     }
 
     return (
-        <ul className={'c-menu' + isDrawer}>
+        <ul className={'c-menu ' + isDrawer}>
             <li className="c-menu__item c-menu__item--focus">
                 <Link to='/' className='c-menu__link' onClick={disable}>Inicio</Link>
             </li>

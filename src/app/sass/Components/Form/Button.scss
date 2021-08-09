@@ -1,29 +1,34 @@
 .c-button {
     padding: $global-padding 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
     color: var(--color-white);
     height: rem(40);
     border-radius: rem(4);
     margin-top: rem(8);
     width: 100%;
     text-align: center;
-    opacity: 0.9;
+    opacity: 0.95;
+
+    &__loading {
+        circle {
+            color: var(--color-white) !important;
+        }
+    }
+
     &:hover {
         opacity: 1;
     }
     span {
-        @include flex(end);
-        font-size: $global-font-size;
-        width: 100%;
-        margin: 1px;
-        letter-spacing: $global-font-letter-spacing;
         font-weight: bolder;
+        @include breakpoint(small) {
+            font-size: $global-font-size-sm;
+        }
     }
     svg,
     div,
     img,
     i {
+        fill: var(--color-white);
         font-size: $global-font-size;
-        margin-right: rem(8);
     }
 }

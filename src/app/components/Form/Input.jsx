@@ -1,52 +1,65 @@
 import React from 'react';
-import { FaTimes } from 'react-icons/fa'
-import InputMask from 'react-input-mask'
+import TextField from '@material-ui/core/TextField';
+import MaskedInput from 'react-text-mask';
 
+
+function TextMaskCustom(props) {
+    const { inputRef, ...other } = props;
+    return (
+        <MaskedInput
+            {...other}
+            ref={(ref) => {
+                inputRef(ref ? ref.inputElement : null);
+            }}
+            mask={props.mask}
+            placeholderChar={'_'}
+        />
+    );
+}
 /**
- * @function Input -  Componente Input ,
- * @props {id=[required]} Id do input (para o for do href funcionar)
- * @props {onChange?} funcao callback ao mudanca de texto
- * @props {type? = text} text, email, password, tel, file...
- * @props {max?} Maximo caracter receber
- * @props {min?} Minimo caracter receber
- * @props {required?} Se o input eh requirido
- * @props {defaultValue?} Valor padrao
- * @props {placeholder?} Dica/Hint/Ajuda no input
- * @props {title?} Titulo do input acima dele
- * @props {error?} Input com modo de erro
- * @props {errorText?} Mostra o texto de erro
- * @props {inputMode?=text} modo de entrada no input (text,decimal, url, search, email, numeric,tel)
- * @props {icon?} Define icone do input
- * @props {delete?} Icone de limpar a direita
- * @props {onDeleteClick?} Define acao do click do botao de deletar
- * @props {style?} Define estilo do input
- * @props {styleIcon?} Define estilo do icone
+ * @function Input 
+ * @param error: string  -- Modo erro no helper text
+ * @param title: string  -- Label 
+ * @param id: string  -- id 
+ * @param icon: JSX Icon || string || null  -- icone comeco... Sem icone Label maior e animado  
+ * @param name: string  -- name 
+ * @param type: string  -- type input 'text,email,password,tel, etc'
+ * @param inputMode: string  -- inputMode 'text,email,tel,numeric, numpad,etc'
+ * @param iconEnd: JSX Icon || string || null  -- icone Final  
+ * @param required: boolean  -- campo requirido ou nao
+ * @param ref: Ref  -- Referencia do input
+ * @param value: string  -- value ou state
+ * @param onChange: void()  -- callback oq fazer com valor
+ * @param mask: array regex ou funcao  -- mascara
+ * @param multiline: boolean - pode ser multilinha 
  * 
  */
+
 export default function Input(props) {
     return (
-        <>
-            {props.title && <label htmlFor={props.id || null} className="c-input__title">{props.title}</label>}
-            < div className={props.error ? 'c-input c-input--error' : 'c-input'} >
-                {props.icon ? <div className='c-input__icon' style={props.styleIcon || null}>{props.icon}</div> : null}
-                <InputMask
-                    mask={props.mask || null}
-                    type={props.type || 'text'}
-                    className='c-input__item'
-                    style={props.style || null}
-                    defaultValue={props.defaultValue || null}
-                    placeholder={props.placeholder || null}
-                    required={props.required ? true : false}
-                    id={props.id}
-                    maxLength={props.max || null}
-                    name={props.id || null}
-                    minLength={props.min || null}
-                    inputMode={props.inputMode || null}
-                    onChange={(e) => props.onChange || console.log('onChange ' + props.id)}
-                />
-                {props.delete ? <span className='c-input__delete'> <FaTimes fillOpacity={0.6} onClick={props.onDeleteClick || null} /> </span> : null}
-            </div>
-            {props.errorText ? <small className='c-input__errorText'>{props.errorText}</small> : null}
-        </>
+        <TextField
+            helperText={props.error || null}
+            error={props.error ? true : false}
+            label={props.title || null}
+            className={props.error ? 'c-input c-input--error' : 'c-input'}
+            variant={props.icon ? 'standard' : 'filled'}
+            InputLabelProps={{ htmlFor: props.id || null }}
+            size='small'
+            InputProps={{
+                inputComponent: props.mask && TextMaskCustom,
+                inputProps: { mask: props.mask || null },
+                startAdornment: props.icon ? <p className='c-input__icon'>{props.icon}</p> : null,
+                type: props.type || 'text',
+                value: props.value,
+                onChange: props.onChange,
+                name: props.name || null,
+                id: props.id || null,
+                ref: props.ref || null,
+                inputMode: props.inputMode || 'none',
+                required: props.required || null,
+                endAdornment: props.iconEnd ? <p className='c-input__icon'>{props.iconEnd}</p> : null,
+            }}
+            multiline={props.multiline ? true : false}
+        />
     )
 }
