@@ -7,7 +7,7 @@ import React from 'react'
  */
 export default function Main(props) {
     return (
-        <main className='l-main shadow radius' style={props.style || null}>
+        <main className='l-main' style={props.style || null}>
             {props.children}
         </main>
     )

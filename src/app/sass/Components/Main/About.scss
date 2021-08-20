@@ -1,0 +1,45 @@
+.c-about {
+    background-color: var(--color-accent);
+    padding: rem(32);
+    color: var(--color-white);
+    border-radius: $global-radius;
+
+    box-shadow: rem(4px) rem(4px) rem(8px) var(--color-shadow);
+    margin: rem(30);
+    @include flex(space-between);
+
+    @include breakpoint(medium) {
+        flex-direction: column;
+    }
+    & div {
+        flex-grow: 1;
+        width: 100%;
+        margin: 0 $global-margin;
+        padding: $global-padding;
+    }
+
+    &__title {
+        font-size: rem(40);
+        margin-bottom: $global-margin;
+        @include breakpoint(medium) {
+            font-size: $global-font-size-xlg;
+        }
+    }
+    &__body {
+        font-size: $global-font-size;
+        @include breakpoint(medium) {
+            font-size: $global-font-size-sm;
+        }
+    }
+    &__right {
+        @include flex(center);
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        max-width: rem(400);
+        @include breakpoint(small) {
+            max-width: rem(300);
+        }
+    }
+}

@@ -21,7 +21,7 @@
             opacity: 0.3;
 
             @include darkMode {
-                background-color: darken($primary, 15%);
+                background-color: darken($primary, 10%);
             }
         }
         &.active {
@@ -32,9 +32,9 @@
     }
 
     &__item {
-        padding: 0 rem(8px);
-        margin: 0 rem(8px);
-        opacity: 0.8;
+        padding: 0 rem(6px);
+        margin: 0 rem(6px);
+        // opacity: 0.8;
 
         &:last-child {
             margin-right: 0;
@@ -62,7 +62,7 @@
     &__link {
         color: white;
         cursor: pointer;
-        font-size: $global-font-size;
+        font-size: $global-font-size-sm;
         &:hover {
             text-shadow: 0 0 rem(1px) var(--color-white);
         }

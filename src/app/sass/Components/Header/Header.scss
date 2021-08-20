@@ -4,14 +4,76 @@ body {
 .l-headerMain {
     background-color: var(--color-primary);
     @include darkMode {
-        background-color: darken($primary, 10%);
+        background-color: darken($primary, 5%);
     }
     padding: $global-padding;
-    height: rem(60px);
-    z-index: $z-dropdown;
+    height: rem(60);
+    z-index: 250;
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: rem(2) rem(4) rem(6) var(--color-shadow);
+    box-shadow: 0 rem(2) rem(8) var(--color-shadow);
     width: 100%;
+}
+
+.c-waves {
+    position: relative;
+    width: 100%;
+    height: rem(150);
+    &__wave {
+        position: absolute;
+        top: -7%;
+        left: 0;
+        width: 100%;
+        height: rem(150);
+        background-image: url("./wave.png");
+        background-size: 60% rem(150);
+        animation: animate 4s ease-in-out infinite;
+        animation-delay: calc(var(--i) * 0.25s);
+
+        @include breakpoint(small) {
+            background-size: 70% rem(150);
+        }
+    }
+
+    &__wave#wave1 {
+        --i: 1;
+        z-index: 210;
+        opacity: 1;
+        background-position-x: 400px;
+    }
+
+    &__wave#wave2 {
+        --i: 2;
+        z-index: 209;
+        opacity: 0.5;
+        background-position-x: 300px;
+    }
+
+    &__wave#wave3 {
+        z-index: 208;
+        --i: 3;
+        opacity: 0.2;
+        background-position-x: 200px;
+    }
+
+    &__wave#wave4 {
+        --i: 4;
+        z-index: 207;
+        opacity: 0.7;
+        background-position-x: 100px;
+    }
+
+    @keyframes animate {
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        0% {
+            transform: translateY(0px);
+        }
+    }
 }
