@@ -203,6 +203,18 @@ textarea {
   resize: none;
 }
 
+body::-webkit-scrollbar {
+  width: rem(16px); /* width of the entire scrollbar */
+}
+* {
+  scrollbar-width: rem(16px);
+  scrollbar-color: var(--color-primary) var(--color-background);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $primary; /* color of the scroll thumb */
+  border-radius: 8px; /* roundness of the scroll thumb */
+  border: 2px solid var(--color-background);
+}
 // Show focus styles on keyboard focus
 // :focus-visible {
 // }

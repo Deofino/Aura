@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Slider from './Slider';
 export default function Form() {
 
     return (
@@ -16,7 +17,32 @@ export default function Form() {
                         <img src={ __dirname + `img/svg/svg-about.png` } alt="" />
                     </div>
                 </div>
+
             </section>
+            <Slider images={ [
+                {
+                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
+                    alt: 'imagem',
+                    title: 'titulo',
+                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
+                },
+                {
+                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
+                    alt: 'imagem',
+                    title: 'titulo',
+                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
+                }, {
+                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
+                    alt: 'imagem',
+                    title: 'titulo',
+                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
+                }, {
+                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
+                    alt: 'imagem',
+                    title: 'titulo',
+                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
+                },
+            ] } type='slider' />
 
         </React.Fragment>
     );

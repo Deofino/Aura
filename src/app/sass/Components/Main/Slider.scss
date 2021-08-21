@@ -1,0 +1,61 @@
+.glide {
+    // margin: 0 $global-margin;
+    &__slide {
+        background: #333;
+        filter: grayscale(65%);
+        opacity: 0.6;
+        padding: rem(16);
+        border-radius: $global-radius;
+        box-shadow: $global-shadow;
+        color: white;
+        &--active {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+    &__title {
+        font-size: $global-font-size-xlg;
+        margin-top: $global-padding;
+    }
+    &__description {
+        font-size: $global-font-size-sm;
+        font-weight: 500;
+    }
+
+    &__arrow {
+        opacity: 0.98;
+        border-radius: 50%;
+        font-size: $global-font-size-sm;
+
+        @include breakpoint(small) {
+            font-size: rem(10);
+            transform: scale(0.8);
+        }
+        &--left {
+            left: 1%;
+        }
+        &--right {
+            right: 1%;
+        }
+    }
+
+    &__bullet {
+        opacity: 0.5;
+        width: rem(12);
+        height: rem(12);
+        &:hover {
+            opacity: 1;
+        }
+        &--active {
+            opacity: 1;
+        }
+
+        @include breakpoint(small) {
+            width: rem(8);
+            height: rem(8);
+        }
+    }
+    &__bullets {
+        bottom: 5%;
+    }
+}

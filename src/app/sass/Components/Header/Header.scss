@@ -27,12 +27,13 @@ body {
         width: 100%;
         height: rem(150);
         background-image: url("./wave.png");
-        background-size: 60% rem(150);
+        background-size: 50% rem(150);
         animation: animate 4s ease-in-out infinite;
         animation-delay: calc(var(--i) * 0.25s);
 
-        @include breakpoint(small) {
-            background-size: 70% rem(150);
+        @include breakpoint(medium) {
+            background-size: 100% rem(150);
+            top: -20%;
         }
     }
 

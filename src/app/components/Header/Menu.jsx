@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ContextHeader } from './Header';
 export default function Menu() {
 
@@ -12,19 +11,19 @@ export default function Menu() {
     return (
         <ul className={ 'c-menu ' + isDrawer }>
             <li className="c-menu__item">
-                <Link to='/' className='c-menu__link' onClick={ disable }>Inicio</Link>
+                <a href='#home' className='c-menu__link' onClick={ disable }>Inicio</a>
             </li>
             <li className="c-menu__item">
-                <Link to='/produtos' className='c-menu__link' onClick={ disable } >Sobre</Link>
+                <a href='#about' className='c-menu__link' onClick={ disable } >Sobre</a>
             </li>
             <li className="c-menu__item">
-                <Link to='/sobre' className='c-menu__link' onClick={ disable } >Projetos</Link>
+                <a href='#projects' className='c-menu__link' onClick={ disable } >Projetos</a>
             </li>
             <li className="c-menu__item">
-                <Link to='/contato' className='c-menu__link' onClick={ disable } >Parcerias</Link>
+                <a href='#friends' className='c-menu__link' onClick={ disable } >Parcerias</a>
             </li>
             <li className="c-menu__item">
-                <Link to='/contato' className='c-menu__link' onClick={ disable } >Contato</Link>
+                <a href='#contact' className='c-menu__link' onClick={ disable } >Contato</a>
             </li>
         </ul>
 
