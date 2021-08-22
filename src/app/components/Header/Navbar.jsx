@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Menu from "./Menu";
+import logo from '../../../img/project/logo192.png';
 import { ContextHeader } from './Header';
 
 export default function Navbar() {
@@ -9,7 +10,7 @@ export default function Navbar() {
     return (
         <nav className="c-navbar">
             <div className="c-navbar__logo">
-                <img className="c-navbar__image" alt='Logo' src={ __dirname + 'img/project/logo192.png' } />
+                <img className="c-navbar__image" alt='Logo' src={ logo } />
             </div>
 
             <button

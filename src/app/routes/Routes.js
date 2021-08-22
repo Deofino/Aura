@@ -12,13 +12,13 @@ export default function Routes() {
 
     return (
         <>
-            <Route exact path='/'>
-                <Main>
-                    <About />
-                    <Members />
-                    <Triagle left={ true } mt={ 1350 } />
-                </Main>
-            </Route>
+            {/* <Route exact path='/'> */ }
+            <Main>
+                <About />
+                <Members />
+                <Triagle left={ true } mt={ 1350 } />
+            </Main>
+            {/* </Route> */ }
         </>
     );
 }

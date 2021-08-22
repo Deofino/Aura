@@ -10,11 +10,11 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Header />
-        <Switch>
-          <Routes />
-        </Switch>
+        {/* <Switch> */ }
+        <Routes />
+        {/* </Switch> */ }
         <Footer />
       </Router>
     </>

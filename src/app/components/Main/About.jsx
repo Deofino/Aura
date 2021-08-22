@@ -1,4 +1,5 @@
 import React from 'react';
+import about from '../../../img/svg/svg-about.png';
 export default function About() {
 
     return (
@@ -13,7 +14,7 @@ export default function About() {
                 </div>
                 <div className="c-about__right">
                     <div className="c-about__image">
-                        <img src={ __dirname + `img/svg/svg-about.png` } alt="" />
+                        <img src={ about } alt="Grupo, sobre, quem somos" />
                     </div>
                 </div>
 
