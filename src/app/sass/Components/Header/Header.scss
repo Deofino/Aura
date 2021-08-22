@@ -18,21 +18,21 @@ body {
 
 .c-waves {
     position: relative;
-    width: 100%;
-    height: rem(150);
+    width: 120%;
+    height: rem(200);
     &__wave {
         position: absolute;
-        top: -7%;
+        top: -10%;
         left: 0;
-        width: 100%;
-        height: rem(150);
-        background-image: url("./wave.png");
-        background-size: 50% rem(150);
-        animation: animate 4s ease-in-out infinite;
+        width: 120%;
+        height: rem(180);
+        background: url(./wave.png);
+        background-size: 50% rem(180);
+        filter: saturate(120%);
+        animation: animate 6s ease-in-out infinite;
         animation-delay: calc(var(--i) * 0.25s);
-
         @include breakpoint(medium) {
-            background-size: 100% rem(150);
+            background-size: 70% rem(180);
             top: -20%;
         }
     }
@@ -47,7 +47,7 @@ body {
     &__wave#wave2 {
         --i: 2;
         z-index: 209;
-        opacity: 0.5;
+        opacity: 0.4;
         background-position-x: 300px;
     }
 
@@ -61,17 +61,16 @@ body {
     &__wave#wave4 {
         --i: 4;
         z-index: 207;
-        opacity: 0.7;
+        opacity: 0.6;
         background-position-x: 100px;
     }
 
     @keyframes animate {
-        0%,
         100% {
             transform: translateY(0px);
         }
         50% {
-            transform: translateY(10px);
+            transform: translateY(20px);
         }
         0% {
             transform: translateY(0px);

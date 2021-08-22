@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <ContextHeader.Provider value={ [ isDrawer, setDrawer ] }>
 
-            <header className='l-headerMain relative shadow'>
+            <header className='l-headerMain relative shadow' id='home'>
                 <Navbar />
             </header>
             <section className='c-waves relative'>

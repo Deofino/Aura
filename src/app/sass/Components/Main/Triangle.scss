@@ -1,0 +1,23 @@
+.c-triangle {
+    position: absolute;
+    max-height: 100vh;
+
+    z-index: $z-below;
+    max-width: 60% !important;
+    opacity: 0.8;
+    @include darkMode {
+        opacity: 0.3;
+        filter: saturate(60%);
+    }
+    @include breakpoint(small) {
+        max-width: 90% !important;
+    }
+
+    &--right {
+        right: 0;
+        rotate: 180deg;
+    }
+    &--left {
+        left: 0;
+    }
+}

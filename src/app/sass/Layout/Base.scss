@@ -1,3 +1,6 @@
+:root {
+  scroll-behavior: smooth;
+}
 html,
 body,
 div,
@@ -208,7 +211,10 @@ body::-webkit-scrollbar {
 }
 * {
   scrollbar-width: rem(16px);
-  scrollbar-color: var(--color-primary) var(--color-background);
+  scrollbar-color: darken($primary, 5%) var(--color-background);
+  @include darkMode {
+    scrollbar-color: var(--color-primary) var(--color-background);
+  }
 }
 body::-webkit-scrollbar-thumb {
   background-color: $primary; /* color of the scroll thumb */

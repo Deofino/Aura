@@ -1,11 +1,10 @@
 import React from 'react';
-import Slider from './Slider';
-export default function Form() {
+export default function About() {
 
     return (
         <React.Fragment>
 
-            <section className='c-about'>
+            <section className='c-about' id='about'>
                 <div className="c-about__left">
                     <h2 className='c-about__title'>Sobre nós</h2>
                     <p className='c-about__body'>
@@ -19,30 +18,6 @@ export default function Form() {
                 </div>
 
             </section>
-            <Slider images={ [
-                {
-                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
-                    alt: 'imagem',
-                    title: 'titulo',
-                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
-                },
-                {
-                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
-                    alt: 'imagem',
-                    title: 'titulo',
-                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
-                }, {
-                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
-                    alt: 'imagem',
-                    title: 'titulo',
-                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
-                }, {
-                    path: 'https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png',
-                    alt: 'imagem',
-                    title: 'titulo',
-                    description: "lorem ipsoui fsfsadsa ds dasdas d@D dwasdasd@? dsdasd sdsa "
-                },
-            ] } type='slider' />
 
         </React.Fragment>
     );

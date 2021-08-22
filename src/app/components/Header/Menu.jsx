@@ -11,7 +11,10 @@ export default function Menu() {
     return (
         <ul className={ 'c-menu ' + isDrawer }>
             <li className="c-menu__item">
-                <a href='#home' className='c-menu__link' onClick={ disable }>Inicio</a>
+                <a href='#home' className='c-menu__link' onClick={ () => {
+                    window.scrollTo({ top: 0 });
+                    disable();
+                } }>Inicio</a>
             </li>
             <li className="c-menu__item">
                 <a href='#about' className='c-menu__link' onClick={ disable } >Sobre</a>
