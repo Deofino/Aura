@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Aura/static/css/main.f9854abf.chunk.css",
-    "main.js": "/Aura/static/js/main.3231925e.chunk.js",
-    "main.js.map": "/Aura/static/js/main.3231925e.chunk.js.map",
+    "main.js": "/Aura/static/js/main.1a3bce75.chunk.js",
+    "main.js.map": "/Aura/static/js/main.1a3bce75.chunk.js.map",
     "runtime-main.js": "/Aura/static/js/runtime-main.89a0e8d1.js",
     "runtime-main.js.map": "/Aura/static/js/runtime-main.89a0e8d1.js.map",
-    "static/js/2.1f7fc683.chunk.js": "/Aura/static/js/2.1f7fc683.chunk.js",
-    "static/js/2.1f7fc683.chunk.js.map": "/Aura/static/js/2.1f7fc683.chunk.js.map",
+    "static/js/2.9240fb70.chunk.js": "/Aura/static/js/2.9240fb70.chunk.js",
+    "static/js/2.9240fb70.chunk.js.map": "/Aura/static/js/2.9240fb70.chunk.js.map",
     "index.html": "/Aura/index.html",
     "static/css/main.f9854abf.chunk.css.map": "/Aura/static/css/main.f9854abf.chunk.css.map",
-    "static/js/2.1f7fc683.chunk.js.LICENSE.txt": "/Aura/static/js/2.1f7fc683.chunk.js.LICENSE.txt"
+    "static/js/2.9240fb70.chunk.js.LICENSE.txt": "/Aura/static/js/2.9240fb70.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.89a0e8d1.js",
-    "static/js/2.1f7fc683.chunk.js",
+    "static/js/2.9240fb70.chunk.js",
     "static/css/main.f9854abf.chunk.css",
-    "static/js/main.3231925e.chunk.js"
+    "static/js/main.1a3bce75.chunk.js"
   ]
 }
