@@ -9,7 +9,7 @@ export default function About() {
                 <div className="c-about__left">
                     <h2 className='c-about__title'>Sobre nós</h2>
                     <p className='c-about__body'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At vitae expedita amet minus, deleniti non voluptate aspernatur doloremque reprehenderit, doloribus veritatis veniam ducimus possimus rerum ab assumenda nesciunt odio dignissimos et quibusdam. Doloremque, eligendi, corporis porro exercitationem totam odit voluptatem repellendus harum tenetur beatae, fuga eius eos dolorum fugit incidunt aut. Distinctio voluptatum odio vero consectetur ipsum, ab placeat mollitia ea possimus quo cum deserunt tenetur excepturi necessitatibus labore. Nisi, mollitia modi velit minima aperiam nesciunt asperiores nihil perspiciatis iusto vel ipsum harum ad perferendis sint nulla quibusdam fugit illo a accusamus at totam excepturi? Aliquam repudiandae modi quaerat soluta?
+                        A corporação Aura atua no ramo da tecnologia especificada e profissionalizada na criação de softwares para empresas de pequeno e médio porte, que surgiu por intermédio de pretensões em comum, sobre realizar projetos que cooperem com as necessidades da sociedade e que possam ser supridas com base na tecnologia. Temos o intuito de proporcionar para os nossos clientes um futuro promissor através de sistemas que supram sua total expectativa, fazendo com que, a busca da evolução e se manter à frente do mercado tecnológico sejam sempre constantes.
                     </p>
                 </div>
                 <div className="c-about__right">

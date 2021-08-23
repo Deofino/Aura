@@ -30,9 +30,7 @@ export default function Projects(props) {
                 </div>
                 <div className="c-projects__body">
                     <h2 className='c-projects__headline'>Nossos Projetos</h2>
-                    <p className='c-projects__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, obcaecati est!
-                        Facilis veritatis doloremque itaque amet atque porro quibusdam tenetur cupiditate, quod architecto,
-                        eos tempora nesciunt eligendi expedita optio molestiae.</p>
+                    <p className='c-projects__text'>Nossos projetos são baseados no uso de tecnologias como HTML, JS, PHP, SQL e React Native, assim, extraindo o maximo e o melhor de cada tecnologia, a fim de promover uma melhor experiencia ao usuario, trazendo interatividade, facil usabilidade e rapido aprendizado.</p>
                 </div>
             </section>
 

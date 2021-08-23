@@ -15,7 +15,8 @@
 
     &--right {
         right: 0;
-        rotate: 180deg;
+        // rotate: 180deg;
+        transform: rotate(180deg);
     }
     &--left {
         left: 0;

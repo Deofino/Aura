@@ -6,6 +6,7 @@ import About from '../components/Main/About';
 import Members from '../components/Main/Members';
 import Triagle from '../components/Main/Triangle';
 import Projects from '../components/Main/Projects';
+import Partner from '../components/Main/Partner';
 // import { Route } from 'react-router-dom';
 
 export default function Routes() {
@@ -19,7 +20,7 @@ export default function Routes() {
                 <Triagle left={ true } mt={ 1350 } />
                 <Projects />
                 <Triagle left={ false } mt={ 2100 } />
-
+                <Partner />
             </Main>
             {/* </Route> */ }
         </>

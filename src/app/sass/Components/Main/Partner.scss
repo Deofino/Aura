@@ -1,0 +1,113 @@
+.c-partner {
+    padding: rem(32);
+    color: var(--color-white);
+    margin: rem(80) rem(10);
+    @include breakpoint(medium) {
+        margin: rem(80) 0;
+        padding: rem(8);
+    }
+    &__headline {
+        font-size: rem(40);
+        color: var(--font-color);
+        padding-bottom: $global-margin;
+        line-height: rem(44);
+        font-style: italic;
+        padding-bottom: rem(12);
+        @include breakpoint(medium) {
+            font-size: $global-font-size-xlg;
+        }
+    }
+
+    &__body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        @include breakpoint(medium) {
+            flex-direction: column;
+        }
+    }
+    &__about {
+        box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
+        padding: rem(60) rem(30);
+        background: var(--color-primary);
+        max-width: 60%;
+        border-radius: $global-radius;
+        text-align: center;
+        @include breakpoint(medium) {
+            max-width: 100%;
+            margin-bottom: rem(16);
+            padding: rem(30) rem(4);
+        }
+
+        &__headline {
+            font-size: $global-font-size-xlg;
+            padding-bottom: $global-padding;
+        }
+        &__text {
+            font-size: $global-font-size;
+            padding: rem(16);
+        }
+
+        &__image {
+            max-width: rem(250) !important;
+            margin: 0 auto;
+        }
+    }
+
+    &__right {
+        padding: rem(30);
+        margin-left: rem(30);
+        @include flex(space-around);
+        flex-direction: column;
+
+        @include breakpoint(medium) {
+            padding: rem(30) rem(4);
+            margin-left: rem(0);
+        }
+    }
+
+    &__card {
+        margin: rem(16) 0;
+        @include breakpoint(medium) {
+            margin: $global-padding 0;
+        }
+        border-radius: $global-radius;
+        overflow: hidden;
+        width: 100%;
+        box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
+        @include flex(space-between);
+        &__background {
+            width: 40%;
+            border-right: 2px solid var(--color-shadow);
+            min-width: rem(120);
+            background-color: darken($primary, 60%);
+            height: 100%;
+        }
+        &__body {
+            width: 100%;
+            background-color: var(--color-accent);
+            padding: rem(20) rem(4);
+        }
+        &__span {
+            font-size: $global-font-size-sm;
+            @include breakpoint(medium) {
+                font-size: $global-font-size;
+            }
+            @include breakpoint(small) {
+                font-size: $global-font-size-sm;
+            }
+            font-weight: 500;
+        }
+
+        &__small {
+            font-size: rem(11);
+            font-weight: 300;
+            @include breakpoint(medium) {
+                font-size: $global-font-size-sm;
+            }
+            @include breakpoint(small) {
+                font-size: rem(11);
+            }
+        }
+    }
+}
