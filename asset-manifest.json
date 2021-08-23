@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Aura/static/css/main.e622381b.chunk.css",
-    "main.js": "/Aura/static/js/main.3fd79a5d.chunk.js",
-    "main.js.map": "/Aura/static/js/main.3fd79a5d.chunk.js.map",
+    "main.js": "/Aura/static/js/main.b68bb41e.chunk.js",
+    "main.js.map": "/Aura/static/js/main.b68bb41e.chunk.js.map",
     "runtime-main.js": "/Aura/static/js/runtime-main.89a0e8d1.js",
     "runtime-main.js.map": "/Aura/static/js/runtime-main.89a0e8d1.js.map",
     "static/js/2.c75d3977.chunk.js": "/Aura/static/js/2.c75d3977.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.89a0e8d1.js",
     "static/js/2.c75d3977.chunk.js",
     "static/css/main.e622381b.chunk.css",
-    "static/js/main.3fd79a5d.chunk.js"
+    "static/js/main.b68bb41e.chunk.js"
   ]
 }
