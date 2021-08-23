@@ -1,17 +1,17 @@
 import React from "react";
 import Glide from '@glidejs/glide';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-export default function Slider(props, { type = 'slider', perView = 3 }) {
+export default function Slider(props) {
 
     React.useEffect(() => {
 
         const initGlide = () => {
-            new Glide(".glide", {
-                type: type,
+            new Glide(`.${props.className || 'glide'}`, {
+                type: props.type || 'slider',
                 focusAt: 'center',
                 startAt: 0,
-                perView: perView,
-                autoplay: 4000,
+                perView: props.perView || 3,
+                autoplay: props.delay || 4000,
                 gap: 20,
                 breakpoints: {
                     600: {
@@ -38,7 +38,7 @@ export default function Slider(props, { type = 'slider', perView = 3 }) {
             <div className="glide__track" data-glide-el="track">
                 <ul className="glide__slides">
                     { props.images.map((el, i) => (
-                        <li className='glide__slide' key={ i }>
+                        <li className='glide__slide' key={ i } style={ props.styleSlide || null } >
                             <img src={ el.path } alt={ el.alt } className="glide__image" key={ i } />
                             { el.title && <h3 className='glide__title'>{ el.title } </h3> }
                             { el.description && <small className='glide__description'>{ el.description } </small> }

@@ -1,5 +1,4 @@
 .glide {
-    // margin: 0 $global-margin;
     &__slide {
         filter: grayscale(65%);
         opacity: 0.6;
@@ -20,7 +19,7 @@
         color: var(--font-color);
         line-height: rem(24);
         margin-top: $global-padding;
-
+        padding: $global-padding;
         @include breakpoint(small) {
             font-size: $global-font-size;
             line-height: rem(18);
@@ -90,6 +89,6 @@
         }
     }
     &__bullets {
-        bottom: 0;
+        bottom: rem(4);
     }
 }

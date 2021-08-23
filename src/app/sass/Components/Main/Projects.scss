@@ -1,0 +1,59 @@
+.c-projects {
+    background-color: var(--color-accent);
+    padding: rem(32);
+    color: var(--color-white);
+    border-radius: $global-radius;
+    width: 70%;
+    box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
+    margin: rem(40) rem(10);
+
+    align-self: flex-end;
+    @include flex(space-between);
+
+    @include breakpoint(medium) {
+        width: 100%;
+        flex-direction: column;
+    }
+    @include flex(space-between);
+    &__body {
+        flex-grow: 1;
+        width: 100%;
+        margin: 0 $global-margin;
+        padding: $global-padding;
+        margin-left: rem(32);
+        @include breakpoint(small) {
+            margin-top: rem(20);
+            margin-left: 0;
+        }
+    }
+    &__image {
+        flex-grow: 1;
+        width: 100%;
+        height: 100%;
+        margin: rem(32);
+        max-width: rem(400);
+        @include breakpoint(small) {
+            max-width: rem(200);
+            margin: rem(20);
+        }
+    }
+
+    &__headline {
+        font-size: rem(40);
+        padding-bottom: $global-margin;
+        line-height: rem(44);
+        @include breakpoint(medium) {
+            font-size: $global-font-size-xlg;
+        }
+    }
+    &__text {
+        font-size: $global-font-size;
+        @include breakpoint(medium) {
+            font-size: $global-font-size-sm;
+        }
+        @include breakpoint(small) {
+            font-size: rem(11);
+            line-height: rem(14);
+        }
+    }
+}

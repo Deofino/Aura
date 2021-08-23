@@ -5,7 +5,7 @@
 
     margin: rem(10);
     margin-top: rem(40);
-
+    margin-bottom: rem(40);
     box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
     &__headline {
         font-size: rem(40);
@@ -40,8 +40,6 @@
         }
     }
     &__slider {
-        // background-color: red;
-        // height: 100%;
         @include breakpoint(medium) {
             width: 100%;
         }

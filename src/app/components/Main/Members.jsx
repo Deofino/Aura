@@ -68,7 +68,7 @@ export default function Members() {
                     <div className="c-members__image">
                         <img src={ members } alt="team, members, people" />
                     </div>
-                    <Slider images={ images } className='c-members__slider' perView={ 3 } bullets arrows options={ {} } />
+                    <Slider images={ images } className='c-members__slider' type='slider' perView={ 3 } bullets arrows />
                 </div>
             </section>
 
