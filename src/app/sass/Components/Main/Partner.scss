@@ -46,6 +46,9 @@
         &__text {
             font-size: $global-font-size;
             padding: rem(16);
+            @include breakpoint(small) {
+                font-size: $global-font-size-sm;
+            }
         }
 
         &__image {

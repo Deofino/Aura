@@ -80,10 +80,10 @@
         padding: rem(2px) rem(8px);
         flex-grow: 1;
         text-align: center;
-        max-width: rem(60);
+        max-width: rem(100);
         height: 100%;
         margin-right: rem(8px);
-
+        filter: brightness(130%) saturate(130%);
         @include flex(center);
     }
 
