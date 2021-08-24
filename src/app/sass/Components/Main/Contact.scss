@@ -1,0 +1,104 @@
+.c-contact {
+    background: url(./svg-form.png);
+    padding: rem(140) rem(40);
+    color: var(--color-white);
+    border-radius: $global-radius;
+    margin: rem(10);
+    margin-bottom: rem(40);
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top-right-radius: 30px;
+    @include flex(space-between);
+    filter: drop-shadow(rem(1) rem(1) rem(6) var(--color-shadow));
+
+    @include breakpoint(medium) {
+        flex-direction: column;
+        background-image: none;
+        padding: rem(16);
+
+        background-color: var(--color-accent);
+        border-radius: $global-radius;
+        @include breakpoint(small) {
+            padding: rem(16) rem(8);
+        }
+    }
+
+    &__form {
+        margin-right: rem(32);
+        margin-left: rem(60);
+        @include breakpoint(medium) {
+            margin: rem(20);
+            order: 2;
+        }
+        @include breakpoint(small) {
+            margin: rem(4);
+        }
+    }
+    &__right {
+        margin-right: rem(30);
+        margin-left: rem(32);
+        @include breakpoint(medium) {
+            margin: rem(20);
+            order: 1;
+        }
+        @include breakpoint(small) {
+            margin: rem(8);
+        }
+    }
+    &__headline {
+        font-size: rem(40);
+        line-height: rem(44);
+        padding-bottom: rem(10);
+
+        @include breakpoint(small) {
+            font-size: rem(28);
+            line-height: rem(36);
+        }
+    }
+    &__text {
+        line-height: rem(20);
+        font-size: $global-font-size-lg;
+        padding-bottom: $global-padding;
+        font-weight: 500;
+
+        @include breakpoint(medium) {
+            font-size: $global-font-size;
+        }
+    }
+    &__image {
+        max-width: rem(400) !important;
+        @include breakpoint(medium) {
+            max-width: rem(250) !important;
+            margin: 0 auto;
+        }
+    }
+    &__input.c-input {
+        margin-bottom: rem(20) !important;
+        @include breakpoint(small) {
+            margin-bottom: rem(12) !important;
+        }
+        color: var(--font-color);
+        & > div {
+            border-radius: $global-radius;
+            margin-top: rem(20);
+            background-color: rgba($color: $light, $alpha: 0.9);
+            @include darkMode {
+                background-color: rgba($color: $dark, $alpha: 0.8);
+            }
+            &:hover {
+                background-color: rgba($color: $light, $alpha: 1);
+                @include darkMode {
+                    background-color: rgba($color: $dark, $alpha: 0.9);
+                }
+            }
+            &:focus-within {
+                background-color: rgba($color: $light, $alpha: 1);
+                @include darkMode {
+                    background-color: rgba($color: $dark, $alpha: 1);
+                }
+            }
+        }
+    }
+}

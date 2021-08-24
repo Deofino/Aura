@@ -23,7 +23,7 @@ export default function Menu() {
                 <a href='#projects' className='c-menu__link' onClick={ disable } >Projetos</a>
             </li>
             <li className="c-menu__item">
-                <a href='#friends' className='c-menu__link' onClick={ disable } >Parcerias</a>
+                <a href='#partner' className='c-menu__link' onClick={ disable } >Parcerias</a>
             </li>
             <li className="c-menu__item">
                 <a href='#contact' className='c-menu__link' onClick={ disable } >Contato</a>
