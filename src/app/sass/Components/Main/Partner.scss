@@ -32,9 +32,9 @@
     }
     &__about {
         box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
-        padding: rem(60) rem(30);
+        padding: rem(60) rem(16);
         background: var(--color-primary);
-        max-width: 60%;
+        max-width: 50%;
         border-radius: $global-radius;
         text-align: center;
         @include breakpoint(medium) {
@@ -56,6 +56,8 @@
         &__text {
             font-size: $global-font-size;
             padding: rem(16);
+            word-break: break-all;
+            text-overflow: ellipsis;
             @include breakpoint(small) {
                 font-size: $global-font-size-sm;
                 padding: rem(8);
@@ -69,57 +71,73 @@
     }
 
     &__right {
-        padding: rem(30);
-        margin-left: rem(30);
-        @include flex(space-around);
+        width: 100%;
+        padding: rem(0) rem(8);
+        margin-left: rem(8);
+        @include flex(space-between);
         flex-direction: column;
 
         @include breakpoint(medium) {
-            padding: rem(30) rem(4);
+            padding: rem(20) rem(4);
             margin-left: rem(0);
         }
     }
 
     &__card {
-        margin: rem(16) 0;
-        @include breakpoint(medium) {
-            margin: $global-padding 0;
-        }
         border-radius: $global-radius;
-        overflow: hidden;
         width: 100%;
         box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
         @include flex(space-between);
+        overflow: auto;
+        height: rem(120);
+        @include breakpoint(medium) {
+            margin: $global-padding 0;
+        }
+
         &__background {
-            width: 40%;
-            border-right: 2px solid var(--color-shadow);
-            min-width: rem(120);
-            background-color: darken($primary, 60%);
+            width: 60%;
+            min-width: rem(120px);
+            border-right: 1px solid var(--color-shadow);
             height: 100%;
+            @include flex(center);
+
+            img {
+                max-height: rem(100);
+            }
+            & > .max {
+                height: 100%;
+                width: 100%;
+                max-height: none;
+            }
         }
         &__body {
             width: 100%;
             background-color: var(--color-accent);
-            padding: rem(20) rem(4);
+            padding: rem(4);
+            height: 100%;
+            text-overflow: ellipsis;
+            padding-right: rem(8);
         }
         &__span {
-            font-size: $global-font-size-sm;
+            font-size: $global-font-size;
             @include breakpoint(medium) {
                 font-size: $global-font-size;
             }
             @include breakpoint(small) {
-                font-size: $global-font-size-sm;
+                font-size: $global-font-size;
             }
-            font-weight: 500;
+            font-weight: bold;
         }
 
         &__small {
-            font-size: rem(11);
+            font-size: rem(12);
+            line-height: rem(16);
             font-weight: 300;
             @include breakpoint(medium) {
                 font-size: $global-font-size-sm;
             }
             @include breakpoint(small) {
+                line-height: rem(14);
                 font-size: rem(11);
             }
         }

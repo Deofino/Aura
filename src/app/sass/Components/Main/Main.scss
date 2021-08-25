@@ -2,10 +2,10 @@
     max-width: $w-extra-large;
     width: 100%;
     margin: rem(60) auto;
-    @include flex(center);
-    flex-direction: row;
     flex-wrap: wrap;
     overflow: visible;
     color: var(--font-color);
-    justify-content: flex-end;
+    @include flex(end);
+    flex-direction: row;
+    // justify-content: flex-end;
 }

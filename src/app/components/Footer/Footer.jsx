@@ -11,10 +11,10 @@ export default function Footer() {
                     <img src={ logo } alt="Aura, Logotipo" />
                 </div>
                 <ul className='l-footer__socialList'>
-                    <li className='l-footer__listItem'><a href="#"><FaFacebook /></a> </li>
-                    <li className='l-footer__listItem'><a href="#"><FaInstagram /></a> </li>
-                    <li className='l-footer__listItem'><a href="#"><FaEnvelopeSquare /></a> </li>
-                    <li className='l-footer__listItem'><a href="#"><FaWhatsapp /></a></li>
+                    <li className='l-footer__listItem'><a href="/"><FaFacebook /></a> </li>
+                    <li className='l-footer__listItem'><a href="/"><FaInstagram /></a> </li>
+                    <li className='l-footer__listItem'><a href="/"><FaEnvelopeSquare /></a> </li>
+                    <li className='l-footer__listItem'><a href="/"><FaWhatsapp /></a></li>
                 </ul>
             </section>
             <section className='l-footer__menu'>
