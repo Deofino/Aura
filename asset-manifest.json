@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Aura/static/css/main.99cb235d.chunk.css",
-    "main.js": "/Aura/static/js/main.a926b636.chunk.js",
-    "main.js.map": "/Aura/static/js/main.a926b636.chunk.js.map",
+    "main.css": "/Aura/static/css/main.e8fc03ae.chunk.css",
+    "main.js": "/Aura/static/js/main.cc0e875c.chunk.js",
+    "main.js.map": "/Aura/static/js/main.cc0e875c.chunk.js.map",
     "runtime-main.js": "/Aura/static/js/runtime-main.89a0e8d1.js",
     "runtime-main.js.map": "/Aura/static/js/runtime-main.89a0e8d1.js.map",
     "static/js/2.6ac58140.chunk.js": "/Aura/static/js/2.6ac58140.chunk.js",
     "static/js/2.6ac58140.chunk.js.map": "/Aura/static/js/2.6ac58140.chunk.js.map",
     "index.html": "/Aura/index.html",
-    "static/css/main.99cb235d.chunk.css.map": "/Aura/static/css/main.99cb235d.chunk.css.map",
+    "static/css/main.e8fc03ae.chunk.css.map": "/Aura/static/css/main.e8fc03ae.chunk.css.map",
     "static/js/2.6ac58140.chunk.js.LICENSE.txt": "/Aura/static/js/2.6ac58140.chunk.js.LICENSE.txt",
     "static/media/Camylly.98cdf931.png": "/Aura/static/media/Camylly.98cdf931.png",
     "static/media/Gabriely.4ba75e03.png": "/Aura/static/media/Gabriely.4ba75e03.png",
@@ -17,7 +17,10 @@
     "static/media/Paulo.ae521fe7.png": "/Aura/static/media/Paulo.ae521fe7.png",
     "static/media/Ruy.c94194d6.png": "/Aura/static/media/Ruy.c94194d6.png",
     "static/media/Vitoria.c9dd30e2.png": "/Aura/static/media/Vitoria.c9dd30e2.png",
+    "static/media/bifrost.b77b600c.jpeg": "/Aura/static/media/bifrost.b77b600c.jpeg",
     "static/media/evoke.5750a7b4.png": "/Aura/static/media/evoke.5750a7b4.png",
+    "static/media/lunar.2b35f54f.jpeg": "/Aura/static/media/lunar.2b35f54f.jpeg",
+    "static/media/saturn.da8a9f25.png": "/Aura/static/media/saturn.da8a9f25.png",
     "static/media/svg-about.1e9a6777.png": "/Aura/static/media/svg-about.1e9a6777.png",
     "static/media/svg-contact.80b70cdd.svg": "/Aura/static/media/svg-contact.80b70cdd.svg",
     "static/media/svg-footer.30e83b6b.png": "/Aura/static/media/svg-footer.30e83b6b.png",
@@ -29,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.89a0e8d1.js",
     "static/js/2.6ac58140.chunk.js",
-    "static/css/main.99cb235d.chunk.css",
-    "static/js/main.a926b636.chunk.js"
+    "static/css/main.e8fc03ae.chunk.css",
+    "static/js/main.cc0e875c.chunk.js"
   ]
 }
