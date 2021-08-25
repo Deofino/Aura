@@ -7,6 +7,10 @@
     margin-top: rem(40);
     margin-bottom: rem(40);
     box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
+
+    @include breakpoint(small) {
+        padding: rem(16) rem(8);
+    }
     &__headline {
         font-size: rem(40);
         text-align: right;

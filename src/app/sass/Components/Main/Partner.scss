@@ -2,9 +2,13 @@
     padding: rem(32);
     color: var(--color-white);
     margin: rem(80) rem(10);
+
     @include breakpoint(medium) {
         margin: rem(80) 0;
         padding: rem(8);
+    }
+    @include breakpoint(small) {
+        padding: rem(16) rem(8);
     }
     &__headline {
         font-size: rem(40);
@@ -38,16 +42,23 @@
             margin-bottom: rem(16);
             padding: rem(30) rem(4);
         }
-
+        @include breakpoint(small) {
+            padding: rem(8);
+        }
         &__headline {
             font-size: $global-font-size-xlg;
             padding-bottom: $global-padding;
+            @include breakpoint(small) {
+                padding-bottom: 0;
+                padding-top: $global-padding;
+            }
         }
         &__text {
             font-size: $global-font-size;
             padding: rem(16);
             @include breakpoint(small) {
                 font-size: $global-font-size-sm;
+                padding: rem(8);
             }
         }
 

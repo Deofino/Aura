@@ -1,5 +1,5 @@
 .c-contact {
-    background: url(./svg-form.png);
+    background: url(./svg-form1.png);
     padding: rem(140) rem(40);
     color: var(--color-white);
     border-radius: $global-radius;
@@ -20,9 +20,9 @@
 
         background-color: var(--color-accent);
         border-radius: $global-radius;
-        @include breakpoint(small) {
-            padding: rem(16) rem(8);
-        }
+    }
+    @include breakpoint(small) {
+        padding: rem(16) rem(8);
     }
 
     &__form {

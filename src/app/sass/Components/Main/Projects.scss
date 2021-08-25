@@ -15,6 +15,9 @@
         flex-direction: column;
     }
     @include flex(space-between);
+    @include breakpoint(small) {
+        padding: rem(16) rem(8);
+    }
     &__body {
         flex-grow: 1;
         width: 100%;

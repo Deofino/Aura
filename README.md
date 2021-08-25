@@ -9,7 +9,7 @@ A corporação Aura atua no ramo da tecnologia especificada e profissionalizada 
 ## Autores
 
 - [@Camylly Lima](https://github.com/CamyLima09)
-- [@Gabrielly Brito](https://github.com/vitoriaGoncalves08)
+- [@Gabrielly Brito](https://github.com/Gabriely-BMO)
 - [@Guilherme Delfino](https://www.github.com/Deofino)
 - [@Kauê Loviz](https://github.com/kauezin007)
 - [@Paulo Moreira](https://github.com/vitoriaGoncalves08)

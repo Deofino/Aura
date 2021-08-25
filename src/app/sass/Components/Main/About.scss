@@ -12,6 +12,9 @@
     @include breakpoint(medium) {
         flex-direction: column;
     }
+    @include breakpoint(small) {
+        padding: rem(16) rem(8);
+    }
     & div {
         flex-grow: 1;
         width: 100%;
