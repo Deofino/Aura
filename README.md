@@ -1,4 +1,4 @@
-![Aura](/build/img/android-chrome-192x192.png)
+![Aura](./src/img/project/logo192.png)
 # Aura | Atraia-se para o futuro
 <!-- #### Aprenda dinamicamente e acompanhe seus avanços numa plataforma de simulados moderna e intuitiva -->
 
@@ -12,7 +12,7 @@ A corporação Aura atua no ramo da tecnologia especificada e profissionalizada 
 - [@Gabrielly Brito](https://github.com/Gabriely-BMO)
 - [@Guilherme Delfino](https://www.github.com/Deofino)
 - [@Kauê Loviz](https://github.com/kauezin007)
-- [@Paulo Moreira](https://github.com/vitoriaGoncalves08)
+- [@Paulo Moreira](https://github.com/PauloWarren)
 - [@Ruy Barbosa](https://github.com/RuyMene)
 - [@Vitoria Golçalves](https://github.com/vitoriaGoncalves08)
 
@@ -26,7 +26,7 @@ A corporação Aura atua no ramo da tecnologia especificada e profissionalizada 
 
 - Site Responsivo
 - Modo claro e escuro
-
+- Parcerias
 <!-- ## Screenshots
 
 

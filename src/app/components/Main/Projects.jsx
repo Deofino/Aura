@@ -2,23 +2,34 @@ import React from "react";
 import project from '../../../img/svg/svg-projects.svg';
 import Slider from "./Slider";
 
+import shoes from '../../../img/project/projects/shoes.png';
+import pokedex from '../../../img/project/projects/pokedex.png';
+import renascent from '../../../img/project/projects/renascent.png';
+import terms from '../../../img/project/projects/Sterms.png';
+import adega from '../../../img/project/projects/adega.png';
+
+
 export default function Projects(props) {
     const ourProjects = [
         {
-            alt: "Projeto MVC",
-            title: "Projeto MVC",
+            path: shoes,
+            alt: "Shoes, tenis",
+            title: "Projeto Tenis com PHP, Mysql e Ajax",
         },
         {
-            alt: "Projeto React-Native",
-            title: "Projeto React-Native",
+            path: renascent,
+            alt: "Renascent",
+            title: "Projeto renascentista, Crud completo",
         },
         {
-            alt: "Projeto PHP",
-            title: "Projeto PHP",
+            path: terms,
+            alt: "Sterms, ingles e programacao",
+            title: "Projeto Integrando ingles e programação com React-Native",
         },
         {
-            alt: "Projeto Loja virtual",
-            title: "Projeto Loja virtual",
+            path: adega,
+            alt: "Adega, Gella Guela, cerveja",
+            title: "Projeto Firebase Adega",
         },
     ];
 
@@ -34,7 +45,7 @@ export default function Projects(props) {
                 </div>
             </section>
 
-            <Slider images={ ourProjects } className='c-projects__slider' perView={ 3 } bullets styleSlide={ { backgroundColor: '#5a89ff', textAlign: 'start', paddingLeft: 20, paddingTop: 60, paddingBottom: 60 } } />
+            <Slider images={ ourProjects } className='c-projects__slider' perView={ 2 } bullets />
         </React.Fragment>
     );
 }

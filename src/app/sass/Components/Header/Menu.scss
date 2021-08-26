@@ -34,7 +34,7 @@
     &__item {
         padding: 0 rem(6px);
         margin: 0 rem(6px);
-        // opacity: 0.8;
+        opacity: 0.8;
 
         &:last-child {
             margin-right: 0;
@@ -78,7 +78,7 @@
                 background-color: lighten($primary, 5%);
 
                 @include darkMode {
-                    background-color: darken($primary, 10%);
+                    background-color: darken($primary, 15%);
                 }
             }
         }

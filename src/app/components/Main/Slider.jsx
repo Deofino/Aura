@@ -14,6 +14,9 @@ export default function Slider(props) {
                 autoplay: props.delay || 4000,
                 gap: 20,
                 breakpoints: {
+                    800: {
+                        perView: 1
+                    },
                     600: {
                         perView: 1
                     }

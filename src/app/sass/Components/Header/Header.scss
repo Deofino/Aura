@@ -5,6 +5,7 @@ body {
     background-color: darken(desaturate(darken($primary, 10%), 35%), 20%);
     @include darkMode {
         background-color: darken(desaturate(darken($primary, 14%), 50%), 20%);
+        // background-color: #6d88ce;
     }
     padding: $global-padding;
     height: rem(70);
