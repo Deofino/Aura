@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Aura/static/css/main.e8fc03ae.chunk.css",
-    "main.js": "/Aura/static/js/main.cc0e875c.chunk.js",
-    "main.js.map": "/Aura/static/js/main.cc0e875c.chunk.js.map",
+    "main.css": "/Aura/static/css/main.97ef4ece.chunk.css",
+    "main.js": "/Aura/static/js/main.fb0c7a3b.chunk.js",
+    "main.js.map": "/Aura/static/js/main.fb0c7a3b.chunk.js.map",
     "runtime-main.js": "/Aura/static/js/runtime-main.89a0e8d1.js",
     "runtime-main.js.map": "/Aura/static/js/runtime-main.89a0e8d1.js.map",
     "static/js/2.6ac58140.chunk.js": "/Aura/static/js/2.6ac58140.chunk.js",
     "static/js/2.6ac58140.chunk.js.map": "/Aura/static/js/2.6ac58140.chunk.js.map",
     "index.html": "/Aura/index.html",
-    "static/css/main.e8fc03ae.chunk.css.map": "/Aura/static/css/main.e8fc03ae.chunk.css.map",
+    "static/css/main.97ef4ece.chunk.css.map": "/Aura/static/css/main.97ef4ece.chunk.css.map",
     "static/js/2.6ac58140.chunk.js.LICENSE.txt": "/Aura/static/js/2.6ac58140.chunk.js.LICENSE.txt",
     "static/media/Camylly.98cdf931.png": "/Aura/static/media/Camylly.98cdf931.png",
     "static/media/Gabriely.4ba75e03.png": "/Aura/static/media/Gabriely.4ba75e03.png",
@@ -16,11 +16,16 @@
     "static/media/Kaue.3fdc61a9.png": "/Aura/static/media/Kaue.3fdc61a9.png",
     "static/media/Paulo.ae521fe7.png": "/Aura/static/media/Paulo.ae521fe7.png",
     "static/media/Ruy.c94194d6.png": "/Aura/static/media/Ruy.c94194d6.png",
+    "static/media/Sterms.ab4e456f.png": "/Aura/static/media/Sterms.ab4e456f.png",
     "static/media/Vitoria.c9dd30e2.png": "/Aura/static/media/Vitoria.c9dd30e2.png",
+    "static/media/adega.22e35be1.png": "/Aura/static/media/adega.22e35be1.png",
     "static/media/bifrost.b77b600c.jpeg": "/Aura/static/media/bifrost.b77b600c.jpeg",
     "static/media/evoke.5750a7b4.png": "/Aura/static/media/evoke.5750a7b4.png",
     "static/media/lunar.2b35f54f.jpeg": "/Aura/static/media/lunar.2b35f54f.jpeg",
+    "static/media/pokedex.af947421.png": "/Aura/static/media/pokedex.af947421.png",
+    "static/media/renascent.07d30636.png": "/Aura/static/media/renascent.07d30636.png",
     "static/media/saturn.da8a9f25.png": "/Aura/static/media/saturn.da8a9f25.png",
+    "static/media/shoes.e2350b34.png": "/Aura/static/media/shoes.e2350b34.png",
     "static/media/svg-about.1e9a6777.png": "/Aura/static/media/svg-about.1e9a6777.png",
     "static/media/svg-contact.80b70cdd.svg": "/Aura/static/media/svg-contact.80b70cdd.svg",
     "static/media/svg-footer.30e83b6b.png": "/Aura/static/media/svg-footer.30e83b6b.png",
@@ -32,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.89a0e8d1.js",
     "static/js/2.6ac58140.chunk.js",
-    "static/css/main.e8fc03ae.chunk.css",
-    "static/js/main.cc0e875c.chunk.js"
+    "static/css/main.97ef4ece.chunk.css",
+    "static/js/main.fb0c7a3b.chunk.js"
   ]
 }
