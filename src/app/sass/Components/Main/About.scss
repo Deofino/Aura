@@ -3,17 +3,18 @@
     padding: rem(32);
     color: var(--color-white);
     border-radius: $global-radius;
-
+    max-width: 160vh;
     box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
-    margin: rem(10);
-    margin-bottom: rem(40);
+    margin: 0 auto;
     @include flex(space-between);
 
     @include breakpoint(medium) {
         flex-direction: column;
+        margin: rem(16);
     }
     @include breakpoint(small) {
         padding: rem(16) rem(8);
+        
     }
     & div {
         flex-grow: 1;

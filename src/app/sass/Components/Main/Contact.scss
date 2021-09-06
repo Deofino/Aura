@@ -1,17 +1,19 @@
 .c-contact {
     background: url(./svg-form1.png);
-    padding: rem(140) rem(40);
+    padding: rem(70) rem(20);
     color: var(--color-white);
     border-radius: $global-radius;
-    margin: rem(10);
+    margin: 0 auto;
     margin-bottom: rem(40);
     overflow: hidden;
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-top-right-radius: 30px;
+    max-width: 150vh;
     @include flex(space-between);
     filter: drop-shadow(rem(1) rem(1) rem(6) var(--color-shadow));
+  
 
     @include breakpoint(medium) {
         flex-direction: column;

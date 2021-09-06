@@ -6,6 +6,7 @@
         border-radius: $global-radius;
         text-align: center;
         color: white;
+        margin-top: 5rem;
         &--active {
             opacity: 1;
             filter: grayscale(0);

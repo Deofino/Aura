@@ -2,6 +2,7 @@
     padding: rem(32);
     color: var(--color-white);
     margin: rem(80) rem(10);
+    max-width: 200vh;
 
     @include breakpoint(medium) {
         margin: rem(80) 0;
@@ -32,7 +33,7 @@
     }
     &__about {
         box-shadow: rem(1) rem(1) rem(6) var(--color-shadow);
-        padding: rem(60) rem(16);
+        padding: rem(50) rem(16);
         background: var(--color-primary);
         max-width: 50%;
         border-radius: $global-radius;
@@ -121,6 +122,8 @@
         }
         &__span {
             font-size: $global-font-size;
+            margin-left: rem(10);
+            margin-top: rem(5);
             @include breakpoint(medium) {
                 font-size: $global-font-size;
             }
@@ -131,9 +134,11 @@
         }
 
         &__small {
-            font-size: rem(12);
+            font-size: rem(13);
             line-height: rem(16);
             font-weight: 300;
+            letter-spacing: rem(0.3);
+            margin-left: rem(10);
             @include breakpoint(medium) {
                 font-size: $global-font-size-sm;
             }
