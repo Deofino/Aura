@@ -114,7 +114,7 @@
                 opacity: 1;
             }
             @include breakpoint(medium) {
-                font-size: $global-font-size-lg;
+                font-size: $global-font-size;
             }
         }
     }

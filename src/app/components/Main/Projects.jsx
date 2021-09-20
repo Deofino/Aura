@@ -3,7 +3,6 @@ import project from '../../../img/svg/svg-projects.svg';
 import Slider from "./Slider";
 
 import shoes from '../../../img/project/projects/shoes.png';
-import pokedex from '../../../img/project/projects/pokedex.png';
 import renascent from '../../../img/project/projects/renascent.png';
 import terms from '../../../img/project/projects/Sterms.png';
 import adega from '../../../img/project/projects/adega.png';
